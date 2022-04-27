@@ -1,0 +1,194 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Mar 30, 2022 at 05:31 PM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.1.2
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `tokadb`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tblcookie`
+--
+
+CREATE TABLE `tblcookie` (
+  `cookie` varchar(1024) NOT NULL,
+  `Customeridfr` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tblcookie`
+--
+
+INSERT INTO `tblcookie` (`cookie`, `Customeridfr`) VALUES
+('1149', 19),
+('1919', 10),
+('0', 21),
+('6', 22),
+('0', 21),
+('0', 21),
+('0', 21),
+('0', 21),
+('6', 22),
+('6', 22),
+('0', 21),
+('6', 22),
+('0', 23),
+('0', 21),
+('5091', 24),
+('0', 26),
+('0', 23),
+('0', 28),
+('0', 28),
+('0', 28),
+('0', 28),
+('0', 28),
+('19f84906f4412abf6066aaa92fe9d6c1', 15),
+('065ce1ac58658682423ce60cd1c5d93b', 16),
+('6bd4aaeb6945d0f41740bbecde78aad0', 17),
+('19f84906f4412abf6066aaa92fe9d6c1', 15),
+('6bd4aaeb6945d0f41740bbecde78aad0', 17),
+('1aedb8d9dc4751e229a335e371db8058', 18),
+('caa8594f9d8605d6416869d44960307b', 19),
+('f2e93efe6c1ba87fe0438498644e8434', 20),
+('f2e93efe6c1ba87fe0438498644e8434', 20),
+('d824fdc5faf84d8a034f729d0509295e', 21),
+('cef736c85abfe6f8e02acac16575737d', 22),
+('0c63e1228a28a2d54088bfbf75ff5fe8', 1),
+('0c63e1228a28a2d54088bfbf75ff5fe8', 1),
+('0c63e1228a28a2d54088bfbf75ff5fe8', 1),
+('0c63e1228a28a2d54088bfbf75ff5fe8', 1),
+('0c63e1228a28a2d54088bfbf75ff5fe8', 1),
+('0c63e1228a28a2d54088bfbf75ff5fe8', 1),
+('0c63e1228a28a2d54088bfbf75ff5fe8', 1),
+('0c63e1228a28a2d54088bfbf75ff5fe8', 1),
+('6bd4aaeb6945d0f41740bbecde78aad0', 11),
+('8cb86256f56352db2ec029b7849e26d0', 23),
+('0c63e1228a28a2d54088bfbf75ff5fe8', 1),
+('8cb86256f56352db2ec029b7849e26d0', 23),
+('caa8594f9d8605d6416869d44960307b', 24),
+('0c63e1228a28a2d54088bfbf75ff5fe8', 1),
+('6bd4aaeb6945d0f41740bbecde78aad0', 11),
+('0c63e1228a28a2d54088bfbf75ff5fe8', 1),
+('0c63e1228a28a2d54088bfbf75ff5fe8', 1),
+('6bd4aaeb6945d0f41740bbecde78aad0', 11),
+('278e1f2cb600efed59568cf84590242b', 25),
+('0c63e1228a28a2d54088bfbf75ff5fe8', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tblcustomerid`
+--
+
+CREATE TABLE `tblcustomerid` (
+  `CustomerIdfr` int(11) NOT NULL,
+  `FirstName` varchar(64) NOT NULL,
+  `LastName` varchar(64) NOT NULL,
+  `Gender` varchar(16) NOT NULL,
+  `Email` varchar(128) NOT NULL,
+  `Password` varchar(64) NOT NULL,
+  `AccountType` varchar(16) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tblcustomerid`
+--
+
+INSERT INTO `tblcustomerid` (`CustomerIdfr`, `FirstName`, `LastName`, `Gender`, `Email`, `Password`, `AccountType`) VALUES
+(1, 'Mantas', 'Stockus', 'male', 'premium@gmail.com', 'qwerty', 'Premium'),
+(2, 'Mantas2', 'Stockus2', 'male', 'mantass@gmail.com', 'None', 'Premium'),
+(3, 'Mantas3', 'Stockus3', 'male', 'mantass3@gmail.com', 'None', 'Premium'),
+(4, 'Mantas4', 'Stockus4', 'male', 'mantass4@gmail.com', 'qwerty4', 'Premium'),
+(5, 'Mantas5', 'Stockus5', 'male', 'mantass5@gmail.com', 'qwerty5', 'Premium'),
+(6, 'Mantas6', 'Stockus6', 'male', 'premium6@gmail.com', 'qwerty6', 'Premium'),
+(7, 'Mantas7', 'Stockus7', 'male', 'premium7@gmail.com', 'qwerty7', 'Premium'),
+(8, 'Mantas8', 'Stockus8', 'male', 'premium8@gmail.com', 'None', 'Premium'),
+(9, 'Mantas9', 'Stockus9', 'male', 'mantass9@gmail.com', 'qwerty9', 'Premium'),
+(10, 'Mantas', 'Stockus', 'male', 'free@gmail.com', 'asda', 'Premium'),
+(11, 'free1', 'free1', 'male', 'free@gmail.com', 'free123', 'Free'),
+(12, 'Mantas', 'Stockus', 'male', 'free@gmail.com', 'free123', 'Free'),
+(13, 'Mantas', 'Stockus', 'male', 'free@gmail.com', 'free123', 'Free'),
+(14, 'test1', 'test2', 'male', 'test2@gmail.com', 'test2', 'Premium'),
+(15, 'test3', 'test3', 'male', 'test3@gmail.com', 'test3', 'Premium'),
+(16, 'test5', 'test5', 'male', 'test5@gmail.com', 'test5', 'Premium'),
+(17, 'MantasFree', 'StockusFree', 'male', 'free@gmail.com', 'free1', 'Free'),
+(18, 'FreePasswordTest', 'asdf', 'male', 'test@gmail.com', '123', 'Free'),
+(19, 'FinalTest', 'FinalTest', 'male', 'FinalTest@gmail.com', 'Final', 'Premium'),
+(20, 'Mantas', 'Stockus', 'male', 'mstockus2004@gmail.com', 'ManTas12', 'Premium'),
+(21, 'ThisIsATestPremium', 'ThisIsATest', 'male', 'testingpremium@gmail.com', '060504ms', 'Premium'),
+(22, 'FreeTesting', 'FreeTesting2', 'male', 'FreeTesting@gmail.com', 'FreeTest', 'Free'),
+(23, 'Nugget', 'McDonalds', 'male', 'mcdonalds@gmail.com', 'nugget', 'Free'),
+(24, 'FinalTestToday', 'LastToday', 'male', 'FinalTest@gmail.com', 'qwerty', 'Premium'),
+(25, 'TokaFitness', 'Test', 'male', 'Toka@gmail.com', 'tokas123', 'Premium');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tblworkout`
+--
+
+CREATE TABLE `tblworkout` (
+  `Workoutidfr` int(11) NOT NULL,
+  `Customeridfr` int(11) NOT NULL,
+  `PushUps` int(11) NOT NULL,
+  `Squats` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tblworkout`
+--
+
+INSERT INTO `tblworkout` (`Workoutidfr`, `Customeridfr`, `PushUps`, `Squats`) VALUES
+(0, 23, 4, 0),
+(0, 23, 4, 0),
+(0, 23, 0, 8),
+(0, 23, 0, 0),
+(0, 23, 0, 0),
+(0, 23, 3, 0),
+(0, 23, 0, 0),
+(0, 23, 0, 0),
+(0, 23, 0, 0),
+(0, 23, 0, 4),
+(0, 19, 0, 8);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `tblcustomerid`
+--
+ALTER TABLE `tblcustomerid`
+  ADD PRIMARY KEY (`CustomerIdfr`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `tblcustomerid`
+--
+ALTER TABLE `tblcustomerid`
+  MODIFY `CustomerIdfr` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
