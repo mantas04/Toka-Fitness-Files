@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="Stylesheet" href="static/Stylesheet.css">
+        <title>Toka Fitness PushUps</title>
+        <h1 class="title">PushUps</h1>
+    </head>
+    <div>
+        <script>
+        var incremented = 0;
+        function buttonClick() {
+            incremented++;
+            document.getElementById('increment').innerHTML = incremented;
+        }
+    </script>
+    <!--    This js function has an increment veriable named incremented = 0
+        The function name is button clicked (means will be used onclick)
+        The incremnt veriable is getting icremented using ++ which will make it go up by 1
+        It is then getting then looking for element with an id of increment
+        This will then increment the id by 1 once clicked-->
+
+        <!--This is where function buttonclick will be activated (onclick)-->
+    <button id = "push_click" onclick="buttonClick();"> Push Up</button>
+        <!--This is where incrementation will happen once clicked on suqats button-->
+    <p id = "increment">0</p>
+
+    <button id = "save" onclick= saveButton()> Save Result</button>
+   
+
+
+    
+    <script>
+
+    function saveButton() {
+        const xhttp = new XMLHttpRequest();
+
+      
+        var PushUpSave = document.getElementById("increment").innerHTML
+        xhttp.open("GET", "http://localhost:5000/savepushups?increment=" + PushUpSave, true);
+        xhttp.send();
+    }
+    </script>
+        
+    </div>
+</html>

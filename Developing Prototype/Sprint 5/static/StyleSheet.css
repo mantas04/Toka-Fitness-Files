@@ -1,0 +1,283 @@
+body{
+    background-color: #17727a;
+}
+.title{
+    color: #ffc84f;              /*Lime yellow  #ffc84f
+                                     Mint Green   #7fff7f
+                                     Dark Cyan    #008b8b*/
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 60px;
+}
+.FreeAccountForm{
+    position:absolute;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: #ffc84f;
+    text-align: center;
+    left: 600px;
+    top:250px;
+    border-style: solid;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+
+}
+.PremiumAccountForm{
+    position:absolute;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    color: #ffc84f;
+    left: 1000px;
+    top:250px;
+    border-style: solid;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+
+}
+/**  LOGIN BUTTON **/
+.login_button_main_screen{
+    position:absolute;
+    background-color: #ffc84f; /* Green */
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    left: 900px;
+    top:650px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/** LOGIN PAGE **/
+.login_form{
+    position:absolute;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    color: #ffc84f;
+    left: 850px;
+    top:290px;
+    border-style: solid;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+}
+.login_form_fail{
+    position:absolute;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    color: #ffc84f;
+    left: 650px;
+    top:240px;
+    border-style: solid;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+}
+#Menu_option_pushUp{
+    position: absolute;
+    left: 500px;
+    top:130px;
+    background: #ffc84f;
+    width: 900px;
+    height: 150px;
+    font-size: 80px;
+    color: #000000;
+    
+}
+#Menu_option_squats{
+    position: absolute;
+    left: 500px;
+    top:330px;
+    background: #ffc84f;
+    width: 900px;
+    height: 150px;
+    font-size: 80px;
+    color: #000000;
+}
+#Menu_option_records{
+    position: absolute;
+    left: 500px;
+    top:530px;
+    background: #ffc84f;
+    width: 900px;
+    height: 150px;
+    font-size: 80px;
+    color: #000000;
+}
+#Menu_option_blogs{
+    position: absolute;
+    left: 500px;
+    top:730px;
+    background: #ffc84f;
+    width: 900px;
+    height: 150px;
+    font-size: 80px;
+    color: #000000;
+}
+#push_click{
+    position: absolute;
+    left: 800px;
+    top:500px;
+    background: #ffc84f;
+    width: 300px;
+    height: 300px;
+    font-size: 80px;
+    border-radius: 50%;
+
+}
+#squat_click{
+    position: absolute;
+    left: 800px;
+    top:500px;
+    background: #ffc84f;
+    width: 300px;
+    height: 300px;
+    font-size: 80px;
+    border-radius: 50%;
+
+}
+
+#increment{
+    position: absolute;
+    left: 800px;
+    top: 130px;
+    background: rgb(255, 255, 255);
+    width: 300px;
+    height: 100px;
+    font-size: 80px;
+    text-align: center;
+
+}
+#save{
+    position: absolute;
+    left: 860px;
+    top: 400px;
+    background: #ffc84f;
+    width: 180px;
+    height: 60px;
+    font-size: 25px;
+    text-align: center;
+}
+#squat_record{
+    position: absolute;
+    left: 860px;
+   
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #ffc84f;
+    text-align: center;
+    padding: 8px;
+    color:#ffc84f;
+  }
+  /** BLOGS TESTING CSS**/
+
+.column {
+    position: absolute;
+    left: 300px;
+    top:200px;
+    background: #ffc84f;
+    width: 300px;
+    height: 150px;
+    font-size: 30px;
+    text-align: center;
+    color: #000000;
+}
+.column2 {
+    position: absolute;
+    left: 800px;
+    top:200px;
+    background: #ffc84f;
+    width: 300px;
+    height: 150px;
+    font-size: 30px;
+    text-align: center;
+    color: #000000;
+  }
+  .column3 {
+    position: absolute;
+    left: 1300px;
+    top:200px;
+    background: #ffc84f;
+    width: 300px;
+    height: 150px;
+    font-size: 30px;
+    text-align: center;
+    color: #000000;
+  }
+  .containerTab1 {
+    position: absolute;
+    left: 12px;
+    top:400px;
+    padding-right: -800px;
+    padding-bottom: 30px;
+    color: white;
+    text-align: center;
+}
+  .containerTab2 {
+    position: absolute;
+    left: 642px;
+    top:400px;
+    padding-right: -800px;
+    padding-bottom: 30px;
+    color: white;
+    text-align: center;
+}
+
+.containerTab3 {
+    position: absolute;
+    left: 1272px;
+    top:400px;
+    padding-right: -800px;
+    padding-bottom: 30px;
+    color: white;
+    text-align: center;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+#image1{
+    position: absolute;
+    float: right;
+}
+#image2{
+    position: absolute;
+    right: 100px;
+}

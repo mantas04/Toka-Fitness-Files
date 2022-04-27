@@ -1,0 +1,80 @@
+body{
+    background-color: #17727a;
+}
+.title{
+    color: #ffc84f;              /*Lime yellow  #ffc84f
+                                     Mint Green   #7fff7f
+                                     Dark Cyan    #008b8b*/
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 60px;
+}
+.FreeAccountForm{
+    position:absolute;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: #ffc84f;
+    text-align: center;
+    left: 600px;
+    top:250px;
+    border-style: solid;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+
+}
+.PremiumAccountForm{
+    position:absolute;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    color: #ffc84f;
+    left: 1000px;
+    top:250px;
+    border-style: solid;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+
+}
+/**  LOGIN BUTTON **/
+.login_button_main_screen{
+    position:absolute;
+    background-color: #ffc84f; /* Green */
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    left: 900px;
+    top:650px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/** LOGIN PAGE **/
+.login_form{
+    position:absolute;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    color: #ffc84f;
+    left: 850px;
+    top:290px;
+    border-style: solid;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+}

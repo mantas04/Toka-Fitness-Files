@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="Stylesheet" href="static/Stylesheet.css">
+        <title>Blogs</title>
+        <h1 class="title">Blogs</h1>
+    </head>
+    <div>
+        <div class="row">
+            <div class="column" onclick="openTab1('b1');" style="background:#ffc84f;">Blog 1<br>Click me!</div>
+            <div class="column2" onclick="openTab2('b2');" style="background:#ffc84f;">Blog 2<br>Click me!</div>
+            <div class="column3" onclick="openTab3('b3');" style="background:#ffc84f;">Blog 3<br>Click me!</div>
+          </div><!--class is identifiying which column used in (css) onclick will run the openTab1,2,3 function once the user clicks on either of the box's-->
+          
+          <div id="b1" class="containerTab1" style="display:none;background:#0f494e">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+            <h2>Blog 1</h2>
+            <!--Random text to fill in space in the blogs part (once user clicks)-->
+            <h3>1. Music improves workout performance</h3>
+                <p>Listening to music while exercising can improve work out performance by 15%.</p><br>  
+            <h3>2. Exercising improves brain performance</h3>
+                <p>Cardiovascular exercise helps create new brain cells. This enhances brainpower and brain activity.</p><br>  
+            <h3>3. Working out sharpens your memory</h3>
+                <p>Exercising increases the production of cells that are responsible for learning and memory</p><br> 
+            <h3>4. Running burns calories!</h3>
+                <p>If you run at a 10 minute per mile pace, you can burn 104.3 calories per mile.</p><br> 
+            <h3>5. More muscle mass = burning more fat while resting</h3>
+                <p>The more muscle mass you have, the more fat your body burns while resting.</p><br>
+          </div>
+          
+          <div id="b2" class="containerTab2" style="display:none;background:#0f494e">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+            <h2>Blog 2</h2>
+            <h3>1. Music improves workout performance</h3>
+                <p>Listening to music while exercising can improve work out performance by 15%.</p><br>
+                
+            <h3>2. Exercising improves brain performance</h3>
+                <p>Cardiovascular exercise helps create new brain cells. This enhances brainpower and brain activity.</p><br>
+                
+            <h3>3. Working out sharpens your memory</h3>
+                <p>Exercising increases the production of cells that are responsible for learning and memory</p><br>
+                
+            <h3>4. Running burns calories!</h3>
+                <p>If you run at a 10 minute per mile pace, you can burn 104.3 calories per mile.</p><br>
+                
+            <h3>5. More muscle mass = burning more fat while resting</h3>
+                <p>The more muscle mass you have, the more fat your body burns while resting.</p><br>
+          </div>
+          
+          <div id="b3" class="containerTab3" style="display:none;background:#0f494e">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+            <h2>Blog 3</h2>
+            <h3>1. Music improves workout performance</h3>
+                <p>Listening to music while exercising can improve work out performance by 15%.</p><br>
+                
+            <h3>2. Exercising improves brain performance</h3>
+                <p>Cardiovascular exercise helps create new brain cells. This enhances brainpower and brain activity.</p><br>
+                
+            <h3>3. Working out sharpens your memory</h3>
+                <p>Exercising increases the production of cells that are responsible for learning and memory</p><br>
+                
+            <h3>4. Running burns calories!</h3>
+                <p>If you run at a 10 minute per mile pace, you can burn 104.3 calories per mile.</p><br>
+                
+            <h3>5. More muscle mass = burning more fat while resting</h3>
+                <p>The more muscle mass you have, the more fat your body burns while resting.</p><br>
+          </div>
+    </div>
+    <div class="image1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUDks7UPGZN1SWaLJMTk7IiVJnB1hKmPdZag:https://get.pxhere.com/photo/running-shoes-tying-shoe-runner-sport-jogging-lifestyle-active-woman-laces-exercise-girl-run-people-athlete-fitness-female-training-health-ready-closeup-walking-footwear-person-foot-getting-summer-jogger-young-outdoor-workout-outside-adult-athletic-working-healthy-spring-activity-park-marathon-shoelace-weight-loss-legs-blue-human-leg-yellow-leg-sock-ankle-standing-joint-photography-electric-blue-nike-free-child-recreation-toddler-knee-fashion-accessory-calf-athletic-shoe-sportswear-jeans-1584193.jpg"style="position:absolute;left:200px;top:400px;width:400px;height:300px;" >
+    </div>
+    <div>
+    <iframe style="position:absolute;left:750px;top:400px;width:560px;height:315px;"  src="https://www.youtube.com/embed/4L93bZW4uEA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="image2">
+        <img src="https://c.pxhere.com/photos/9c/bd/back_bodybuilding_fitness_girl_muscles_person_shoulders_sport-920036.jpg!d"style="position:absolute;left:1350px;top:400px;width:400px;height:300px;" >
+    </div>
+    <!-- at the start im setting local veriables : item,GettingClassName
+    GettingClassName is going to get the element name this case being containerTab1
+    for look wil do the following things:
+    set item = 0 if item has smaller length the element add one to item (display tab)-->
+    <script>
+        function openTab1(tabName) {
+            var item, GettingClassName; 
+            GettingClassName = document.getElementsByClassName("containerTab1");
+            for (item = 0; item < GettingClassName.length; item++) {
+                GettingClassName[item].style.display = "none";
+          }
+          document.getElementById(tabName).style.display = "block";
+        }
+        function openTab2(tabName) {
+            var item, GettingClassName;
+            GettingClassName = document.getElementsByClassName("containerTab2");
+            for (item = 0; item < GettingClassName.length; item++) {
+                GettingClassName[item].style.display = "none";
+          }
+          document.getElementById(tabName).style.display = "block";
+        }
+        function openTab3(tabName) {
+            var item, GettingClassName;
+            GettingClassName = document.getElementsByClassName("containerTab3");
+            for (item = 0; item < GettingClassName.length; item++) {
+                GettingClassName[item].style.display = "none";
+          }
+          document.getElementById(tabName).style.display = "block";
+        }
+        </script>
+        
+        
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="Stylesheet" href="static/Stylesheet.css">
+        <title>Toka Fitness Records</title>
+        <h1 class="title">Records</h1>
+    </head>
+    <body>
+       
+
+        <div>
+            <table>
+                <tr>
+                    <th><h1>Pushups</h1></th>
+                    <th><h1>Squats</h1></th>
+                </tr>
+                
+                <tr>
+                    <th>
+                        <h2>Old Record</h2>
+                        {% for record in records %}
+                        <p>{{ record[0] }}</p>
+                        {% endfor %}
+                        <h2>New Record</h2>
+                    </th>
+                    <th>
+                        <h2>Old Record</h2>
+                        {% for record in records %}
+                        <p>{{ record[1] }}</p>
+                        {% endfor %}
+                        <h2>New Record</h2>
+                    </th>
+                </tr>
+                
+                
+
+
+            </table>
+
+
+
+        </div>
+    </body>
+</html>

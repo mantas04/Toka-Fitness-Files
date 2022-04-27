@@ -1,0 +1,11 @@
+body{
+    background-color: #DBF9FC;
+}
+.FreeAccountForm{
+    position: absolute;
+    left:80px;
+}
+.PremiumAccountForm{
+    position: absolute;
+    left:360px;
+}

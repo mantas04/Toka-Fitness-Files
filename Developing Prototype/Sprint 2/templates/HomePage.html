@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link rel="Stylesheet" href="static/Stylesheet.css">
+        <title>Toka Fitness</title>
+        <h1 class="title">Toka Fitness HomePage</h1>
+    </head>
+    <div class="FreeAccountForm" > 
+        <form id= 'form_color' method="POST" action = "/register"> 
+            <input type="hidden" name = "AccountType" value="Free">
+            <h2>Free Account Form</h2>
+            <label for="Fname">First Name:</label><br>
+            <input type="text" id="Fname" name="Fname"><br>
+            <label for="Lname">Last name:</label><br>
+            <input type="text" id="Lname" name="Lname"><br>
+            <label for="gender">Gender:</label><br>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option> <br>
+            </select><br>
+            <label for="email">email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="Password">Password:</label><br>
+            <input type="password" id="Password" name="Password"><br>
+            <input type="submit" value="Create Free Account">
+        </form>
+    </div>
+    <div class="PremiumAccountForm"> 
+        <form id= 'form_color' method="POST" action = "/register"> 
+            <input type="hidden" name = "AccountType" value="Premium">
+            <h2>Premium Account Form</h2>
+            <label for="Fname">First Name:</label><br>
+            <input type="text" id="Fname" name="Fname"><br>
+            <label for="Lname">Last name:</label><br>
+            <input type="text" id="Lname" name="Lname"><br>
+            <label for="gender">Gender:</label><br>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option> <br>
+            </select><br>
+            <label for="email">email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="Password">Password:</label><br>
+            <input type="password" id="Password" name="Password"><br>
+            <input type="submit" value="Create Premium Account">
+        </form>
+    </div>
+
+    
+    <div class="login_button_main_screen" >
+        <a href="/login" >Login</a>
+    </div>
+</html>

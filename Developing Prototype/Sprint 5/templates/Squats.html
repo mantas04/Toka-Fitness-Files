@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="Stylesheet" href="static/Stylesheet.css">
+        <title>Toka Fitness Squats</title>
+        <h1 class="title">Squats</h1>
+    </head>
+    <div>
+        <!--Java script function -->
+        <script> 
+        var incremented = 0;
+        function buttonClick() {
+            incremented++;
+            document.getElementById('increment').innerHTML = incremented;
+        }
+    </script>
+<!--    This js function has an increment veriable named incremented = 0
+        The function name is button clicked (means will be used onclick)
+        The incremnt veriable is getting icremented using ++ which will make it go up by 1
+        It is then getting then looking for element with an id of increment
+        This will then increment the id by 1 once clicked-->
+
+
+        <!--This is where function buttonclick will be activated (onclick)-->
+    <button id = "squat_click" onclick="buttonClick();">Squat</button> 
+        <!--This is where incrementation will happen once clicked on suqats button-->
+    <p id = "increment">0</p>
+
+
+
+
+    <button id = "save" onclick= saveButton()> Save Result</button>
+    <!--XMLHttpRequest object to request data from a server.
+        varable SquatsSave is getting the id increment (which contains the number)
+        xhttp then opens a get request with the url including the ?increment (argument/ this is received in controller)
+        it then ands squatsSave to it and sends it off-->
+    <script>
+    function saveButton() {
+        const xhttp = new XMLHttpRequest();
+        var SquatSave = document.getElementById("increment").innerHTML
+        xhttp.open("GET", "http://localhost:5000/savesquats?increment=" + SquatSave, true);
+        xhttp.send();
+    }
+    </script>
+        
+    </div>
+</html>
